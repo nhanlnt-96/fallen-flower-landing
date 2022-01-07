@@ -1,0 +1,194 @@
+@import '../../styles/rwd';
+
+.team-comp {
+  background-color: #3a241a;
+
+  &-container {
+    height: 100%;
+    position: relative;
+
+    .left-img, .right-img {
+      position: absolute;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: .1;
+      z-index: 0;
+      top: 0;
+      width: 600px;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .left-img {
+      height: 200px;
+      background-image: url("../../assets/imgs/subTeamImg1.svg");
+      left: 0;
+    }
+
+    .right-img {
+      height: 300px;
+      background-image: url("../../assets/imgs/subTeamImg2.svg");
+      right: 0;
+    }
+  }
+}
+
+.team-comp-container .team-comp {
+  &-title {
+    z-index: 1;
+
+    .title {
+      text-transform: uppercase;
+      color: #745e4d;
+      text-align: center;
+      font-family: TeamTitle, sans-serif;
+      font-size: 72px;
+      font-weight: bold;
+      @include mobile {
+        font-size: 50px;
+      }
+    }
+  }
+
+  &-members {
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    margin-top: 36px;
+    @include tablet {
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include wide-desktop {
+      grid-gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item-container {
+      @include mobile {
+        &:not(:first-child) {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    .item-container .member-ava {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .item-container .member-info {
+      height: 100px;
+      margin-top: 12px;
+
+      @include mobile {
+        height: unset;
+      }
+
+      .member-name {
+        font-family: TeamUsername, sans-serif;
+        color: #03989e;
+        font-size: 26px;
+        text-align: center;
+        @include mobile {
+          font-size: 25px;
+        }
+        @include desktop {
+          font-size: 30px;
+        }
+        @include wide-desktop {
+          font-size: 26px;
+        }
+      }
+
+      .member-position {
+        font-family: TeamUsername, sans-serif;
+        text-align: center;
+        color: #fcc03e;
+        @include mobile {
+          font-size: 25px;
+        }
+        @include desktop {
+          font-size: 30px;
+        }
+        @include wide-desktop {
+          font-size: 26px;
+        }
+      }
+
+      .member-social {
+        margin-top: 5px;
+
+        .social-id {
+          font-family: TeamUserSocial, sans-serif;
+          color: #fcc03e;
+          @include mobile {
+            font-size: 30px;
+          }
+          @include desktop {
+            font-size: 25px;
+          }
+          @include wide-desktop {
+            font-size: 20px;
+          }
+        }
+
+        img {
+          width: 10%;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .item-container .member-about {
+      padding: 0 10px 0 30px;
+
+      @include mobile {
+        margin-bottom: 24px;
+      }
+      @include tablet {
+        height: 350px;
+      }
+      @include desktop {
+        margin-top: 12px;
+        height: 250px;
+      }
+      @include wide-desktop {
+        height: 400px;
+      }
+
+      .desc {
+        color: #03989e;
+        list-style-type: disc;
+        font-size: 15px;
+        font-family: TeamUserAbout, sans-serif;
+        line-height: 25px;
+        @include mobile {
+          font-size: 18px;
+        }
+
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .item-container .member-footer .img-footer {
+      width: 80%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

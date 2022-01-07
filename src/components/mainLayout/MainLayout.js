@@ -4,6 +4,7 @@ import BannerComp from "../banner/BannerComp";
 import AboutComp from "../about/AboutComp";
 import CommunityComp from "../community/CommunityComp";
 import RoadmapComp from "../roadmap/RoadmapComp";
+import TeamComp from "../team/TeamComp";
 
 const MainLayout = () => {
   return (
@@ -19,6 +20,9 @@ const MainLayout = () => {
       </Row>
       <Row id="roadmap">
         <RoadmapComp/>
+      </Row>
+      <Row id="team">
+        <TeamComp/>
       </Row>
     </Container>
   );
