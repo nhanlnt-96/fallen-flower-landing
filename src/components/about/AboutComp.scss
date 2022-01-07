@@ -1,0 +1,94 @@
+@import "../../styles/rwd";
+
+.about-comp {
+  background-color: #244139;
+
+  &-container {
+    height: 100%;
+    position: relative;
+
+    .cloud-bg, .nft-img {
+      position: absolute;
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+      @include desktop {
+        bottom: unset;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include wide-desktop {
+        bottom: 0;
+        top: unset;
+        transform: unset;
+      }
+    }
+
+    .cloud-bg {
+      width: 900px;
+      height: 600px;
+      background-image: url("../../assets/gifs/animateCloud.gif");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 100% 100%;
+      opacity: .1;
+      z-index: 0;
+      left: 0;
+    }
+
+    .nft-img {
+      width: 300px;
+      height: 300px;
+      left: 75%;
+      transform: translateX(-75%);
+      background-image: url("../../assets/imgs/subBgAbout.svg");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 100% 100%;
+      opacity: .1;
+      z-index: 1;
+    }
+  }
+}
+
+.about-comp-container .about-comp-content {
+  z-index: 1;
+  height: 100%;
+
+  .content-img {
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-desc {
+    color: #e49d14;
+
+    .title {
+      font-family: AboutTitle, sans-serif;
+      font-size: 45px;
+      @include mobile {
+        margin-top: 24px;
+        text-align: center;
+        font-size: 40px;
+      }
+    }
+
+    .desc {
+      font-family: AboutContent, sans-serif;
+      font-size: 18px;
+      text-align: justify;
+      margin-top: 12px;
+      line-height: 20px;
+
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+  }
+}
