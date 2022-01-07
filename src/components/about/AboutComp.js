@@ -10,14 +10,15 @@ const AboutComp = () => {
       <Container className="about-comp-container">
         <div className="cloud-bg"/>
         <Row className="about-comp-content d-flex justify-content-center align-items-center">
-          <Col xl={5} lg={4} md={5} sm={12} className="content-img">
+          <Col data-aos="zoom-in" xl={5} lg={4} md={5} sm={12} className="content-img">
             <img src={AboutImg} alt="about-fallen-flower"/>
           </Col>
-          <Col xl={7} lg={8} md={7} sm={12} className="content-desc d-flex flex-column justify-content-center">
-            <h6 className="title">fallen flowers project</h6>
+          <Col xl={7} lg={8} md={7} sm={12}
+               className="content-desc d-flex flex-column justify-content-center">
+            <h6 data-aos="fade-up" className="title">fallen flowers project</h6>
             {
               aboutData.map((val, index) => (
-                <p key={index} className="desc">{val}</p>
+                <p data-aos="fade-up" key={index} className="desc">{val}</p>
               ))
             }
           </Col>

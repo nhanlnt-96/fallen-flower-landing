@@ -21,7 +21,7 @@ const RoadmapComp = () => {
           <div className="roadmap-comp-detail">
             {
               roadmapData.map((val, index) => (
-                <div className="roadmap-item">
+                <div data-aos="fade-up" className="roadmap-item">
                   <div className="progress-container d-flex justify-content-center align-items-center">
                     <p className="detail d-flex justify-content-center align-items-center">{val.progress}</p>
                   </div>

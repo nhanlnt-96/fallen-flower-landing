@@ -8,10 +8,10 @@ const CommunityComp = () => {
     <Container fluid className="community-comp comp-height">
       <Container className="community-comp-container">
         <Row className="community-comp-content">
-          <div className="community-comp-title d-flex justify-content-center align-items-center">
+          <div data-aos="fade-up" className="community-comp-title d-flex justify-content-center align-items-center">
             <h6 className="title">Community</h6>
           </div>
-          <div className="community-comp-desc">
+          <div data-aos="zoom-in" className="community-comp-desc">
             <div className="left"/>
             <div className="right"/>
             <p className="desc">Unlike many projects launching fast 10k pfp collections; we are limiting ourselves to
@@ -24,7 +24,7 @@ const CommunityComp = () => {
           <div className="community-comp-img">
             {
               communityData.map((val, index) => (
-                <img key={index} src={val} alt="fallen-flower-community"/>
+                <img data-aos="zoom-in" key={index} src={val} alt="fallen-flower-community"/>
               ))
             }
           </div>

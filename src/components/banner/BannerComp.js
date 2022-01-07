@@ -10,7 +10,7 @@ const BannerComp = () => {
       <HeaderComp/>
       <Container className="banner-comp-container">
         <div className="left-img"/>
-        <Row className="banner-comp-content d-flex justify-content-center align-items-center">
+        <Row data-aos="zoom-in" className="banner-comp-content d-flex justify-content-center align-items-center">
           <img src={BannerImg} alt="fallen-flower-project"/>
         </Row>
         <div className="right-img"/>

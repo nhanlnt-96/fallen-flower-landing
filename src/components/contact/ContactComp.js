@@ -12,22 +12,27 @@ const ContactComp = () => {
     <Container fluid className="contact-comp comp-height">
       <Container className="contact-comp-container">
         <Row className="contact-detail">
-          <img src={FollowUs} alt="fallen-flower-project"/>
-          <p className="contact-item">metagascar links to check out the space we will build in photo attached to see a
+          <img data-aos="fade-up" src={FollowUs} alt="fallen-flower-project"/>
+          <p data-aos="fade-up" className="contact-item">metagascar links to check out the space we will build in photo
+            attached to see a
             strip of land</p>
-          <p className="contact-item">we plan to buy a minimum of 10 plots of land or 1 street but may increase this to
+          <p data-aos="fade-up" className="contact-item">we plan to buy a minimum of 10 plots of land or 1 street but
+            may increase this to
             20
             depending on plans</p>
-          <p className="contact-url space-content">https://metagascar.com/?s=09</p>
-          <p className="contact-item">@metagascarNFT</p>
-          <p className="contact-url space-content">https://hubs.mozilla.com/e7YinhQ/20-sierra-sky-dr-metagascar?s=09</p>
-          <p className="contact-url">https://hubs.mozilla.com/iGxxFNA/2-sniper-st-metagascar</p>
-          <p className="contact-url">https://hubs.mozilla.com/xMJdqkV/4-degen-st-metagascar?s=09</p>
-          <p className="contact-url">https://hubs.mozilla.com/LvN9NGG/snoopy-eminent-place?s=09</p>
-          <p className="contact-item space-content">to read more about the asm on chain A.I. brains</p>
-          <p className="contact-url">https://www.alteredstatemachine.xyz/?s=09</p>
-          <p className="contact-item">@altstatemachine</p>
-          <p className="contact-item space-content">Those are some links for the concept and further research.</p>
+          <p data-aos="fade-up" className="contact-url space-content">https://metagascar.com/?s=09</p>
+          <p data-aos="fade-up" className="contact-item">@metagascarNFT</p>
+          <p data-aos="fade-up"
+             className="contact-url space-content">https://hubs.mozilla.com/e7YinhQ/20-sierra-sky-dr-metagascar?s=09</p>
+          <p data-aos="fade-up" className="contact-url">https://hubs.mozilla.com/iGxxFNA/2-sniper-st-metagascar</p>
+          <p data-aos="fade-up" className="contact-url">https://hubs.mozilla.com/xMJdqkV/4-degen-st-metagascar?s=09</p>
+          <p data-aos="fade-up" className="contact-url">https://hubs.mozilla.com/LvN9NGG/snoopy-eminent-place?s=09</p>
+          <p data-aos="fade-up" className="contact-item space-content">to read more about the asm on chain A.I.
+            brains</p>
+          <p data-aos="fade-up" className="contact-url">https://www.alteredstatemachine.xyz/?s=09</p>
+          <p data-aos="fade-up" className="contact-item">@altstatemachine</p>
+          <p data-aos="fade-up" className="contact-item space-content">Those are some links for the concept and further
+            research.</p>
         </Row>
         <Row className="contact-social">
           <div className="bg-left"/>

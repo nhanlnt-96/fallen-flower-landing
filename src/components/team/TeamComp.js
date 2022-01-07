@@ -18,7 +18,7 @@ const TeamComp = () => {
             {
               teamData.map((val, index) => (
                 <>
-                  <div key={index} className="item-container">
+                  <div data-aos="zoom-in" key={index} className="item-container">
                     <div className="member-ava">
                       <img src={val.ava} alt=""/>
                     </div>
@@ -37,7 +37,7 @@ const TeamComp = () => {
                         ))
                       }
                     </ul>
-                    <div className="member-footer d-flex justify-content-center align-items-center">
+                    <div data-aos="zoom-in" className="member-footer d-flex justify-content-center align-items-center">
                       <img className="img-footer" src={Footer} alt="fallen-flower-project"/>
                     </div>
                   </div>
