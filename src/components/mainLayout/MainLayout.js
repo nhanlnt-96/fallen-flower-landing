@@ -3,6 +3,7 @@ import {Container, Row} from "react-bootstrap";
 import BannerComp from "../banner/BannerComp";
 import AboutComp from "../about/AboutComp";
 import CommunityComp from "../community/CommunityComp";
+import RoadmapComp from "../roadmap/RoadmapComp";
 
 const MainLayout = () => {
   return (
@@ -15,6 +16,9 @@ const MainLayout = () => {
       </Row>
       <Row id="community">
         <CommunityComp/>
+      </Row>
+      <Row id="roadmap">
+        <RoadmapComp/>
       </Row>
     </Container>
   );
