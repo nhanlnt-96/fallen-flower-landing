@@ -1,0 +1,114 @@
+@import "../../styles/rwd";
+
+.contact-comp {
+  background-color: #bd9479;
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.contact-comp-container {
+  .contact-detail {
+    background: url("../../assets/imgs/contacBorder.png") no-repeat center;
+    background-size: 100% 100%;
+    padding: 50px;
+    @include mobile {
+      padding: 30px 10px;
+    }
+
+    img {
+      width: 30%;
+      margin: 30px 30px 24px 0;
+      @include mobile {
+        width: 50%;
+        margin: 15px 15px 12px 0;
+      }
+    }
+
+    .contact-item, .contact-url {
+      font-family: AboutContent, sans-serif;
+      font-size: 22px;
+      margin: 0 20px;
+      line-height: 35px;
+      word-wrap: break-word;
+      @include mobile {
+        margin: 0;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+
+    .contact-url {
+      color: #03989e;
+    }
+
+    .space-content {
+      margin-top: 24px;
+    }
+  }
+
+  .contact-social {
+    position: relative;
+    height: 300px;
+    margin-top: 36px;
+    @include mobile {
+      margin-top: 24px;
+      height: 100px;
+    }
+
+    .bg-left, .bg-right {
+      position: absolute;
+      background-image: url("../../assets/gifs/contactFooter1.gif");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: .1;
+      z-index: 0;
+      bottom: 0;
+      width: 300px;
+      height: 100%;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .bg-left {
+      left: 0;
+    }
+
+    .bg-right {
+      right: 0;
+    }
+
+    .social {
+      &-item a {
+        &:not(:first-child) {
+          margin-left: 36px;
+        }
+
+        img {
+          width: 80px;
+          @include mobile {
+            width: 50px;
+          }
+        }
+      }
+
+      .copyright {
+        color: #ffffff;
+        text-shadow: 0 0.0375em 0.28125em rgba(0, 0, 0, 60%);
+        font-size: 30px;
+        text-align: center;
+        margin-top: 24px;
+        font-family: Copyright, sans-serif;
+        @include smallScreen {
+          font-size: 15px !important;
+        }
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
