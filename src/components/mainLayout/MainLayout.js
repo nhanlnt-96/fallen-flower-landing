@@ -1,12 +1,12 @@
 import React from 'react';
 import {Container, Row} from "react-bootstrap";
-import HeaderComp from "../header/HeaderComp";
+import BannerComp from "../banner/BannerComp";
 
 const MainLayout = () => {
   return (
     <Container fluid className="main-layout">
       <Row>
-        <HeaderComp/>
+        <BannerComp/>
       </Row>
     </Container>
   );
