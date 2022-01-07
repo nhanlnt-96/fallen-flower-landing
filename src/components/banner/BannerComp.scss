@@ -1,4 +1,64 @@
+@import "../../styles/rwd";
+
 .banner-comp {
   background-color: #d7d4cf;
   padding: 0;
+
+  &-container {
+    height: calc(100vh - 128px);
+    position: relative;
+    @include mobile {
+      height: calc(100vh - 54px);
+    }
+    @include tablet {
+      height: calc(100vh - 54px);
+    }
+
+    .left-img, .right-img {
+      position: absolute;
+    }
+
+    .left-img {
+      background-image: url("../../assets/imgs/subBgBanner2.svg");
+      background-position: center 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: .2;
+      width: 300px;
+      height: 400px;
+      bottom: 0;
+      left: 0;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .right-img {
+      background-image: url("../../assets/imgs/subBgBanner1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: .2;
+      width: 300px;
+      height: 400px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.banner-comp-container .banner-comp-content {
+  height: 100%;
+
+  img {
+    @include tablet {
+      width: 70%;
+    }
+    @include desktop {
+      width: 80%;
+    }
+    @include wide-desktop {
+      width: 60%;
+    }
+  }
 }
