@@ -46,6 +46,7 @@ const TeamComp = () => {
             }
           </div>
         </Row>
+        <div className="team-footer"/>
       </Container>
     </Container>
   );

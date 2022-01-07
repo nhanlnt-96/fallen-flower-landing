@@ -6,8 +6,12 @@
   &-container {
     height: 100%;
     position: relative;
+    margin-bottom: 200px;
+    @include mobile {
+      margin-bottom: unset;
+    }
 
-    .left-img, .right-img {
+    .left-img, .right-img, .team-footer {
       position: absolute;
       background-size: 100% 100%;
       background-position: center;
@@ -31,6 +35,15 @@
       height: 300px;
       background-image: url("../../assets/imgs/subTeamImg2.svg");
       right: 0;
+    }
+
+    .team-footer {
+      height: 300px;
+      background-image: url("../../assets/imgs/subTeamImg3.svg");
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      top: unset;
     }
   }
 }
