@@ -1,0 +1,136 @@
+@import '../../styles/rwd';
+
+.header-comp {
+  &-container {
+    @include mobile {
+      padding-left: 0;
+      padding-right: 0;
+      display: flex !important;
+      justify-content: flex-end !important;
+      align-items: center !important;
+    }
+    @include tablet {
+      display: flex !important;
+      justify-content: flex-end !important;
+      align-items: center !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-menu {
+    .menu {
+      width: 100%;
+    }
+
+    .header-menu-item {
+      text-transform: uppercase;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 33%);
+      color: #a9852a !important;
+      letter-spacing: 5px;
+      font-size: 18px;
+      font-family: HeaderFont, sans-serif;
+      position: relative;
+
+      &::before {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        inset: 0 0 0 0;
+        background: #3a241a;
+        z-index: -1;
+        transition: transform .3s ease;
+      }
+
+      @include mobile {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    .button-item {
+      background-color: #3a241a;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 15px;
+      width: 200px;
+      display: flex;
+      text-decoration: none;
+      color: inherit;
+      max-width: 400px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #a9852a;
+        transform-origin: 0 bottom 0;
+        transform: scaleY(0);
+        transition: .4s ease-out;
+      }
+
+      &:hover {
+        .button-name {
+          z-index: 1;
+          color: #3a241a;
+          text-shadow: unset;
+        }
+
+        &:before {
+          transform: scaleY(1);
+        }
+      }
+
+      .button-name {
+        color: #a9852a;
+        font-weight: bold;
+        font-size: 25px;
+        text-shadow: 0.03790322em -0.00805658em 0em rgba(36, 65, 57, 50%), 0.07580644em -0.01611316em 0em rgba(36, 65, 57, 30%);
+
+        &:first-child {
+          font-family: ConnectText, sans-serif;
+        }
+
+        &:last-child {
+          font-family: WalletText, sans-serif;
+        }
+      }
+    }
+  }
+
+  &-toggle-custom {
+    border: none;
+    color: unset !important;
+    box-shadow: unset !important;
+    border-color: unset !important;
+  }
+}
