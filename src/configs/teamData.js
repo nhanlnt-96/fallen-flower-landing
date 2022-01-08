@@ -17,7 +17,7 @@ export const teamData = [
   {
     ava: Ava2,
     name: "Cardinal",
-    title: "lead dungeon design",
+    title: "machine learning specialist",
     social: "",
     socialIcon: "",
     about: ["After years of machine learning with neural networking. Playing with reinforcement learning ai with my homemade video games and gans has me excited for this project let alone the study of deep learning with the potentials it brings."]
@@ -25,7 +25,7 @@ export const teamData = [
   {
     ava: Ava3,
     name: "BowlingForLimpBiscuts",
-    title: "machine learning specialist",
+    title: "lead dungeon design",
     social: "",
     socialIcon: "",
     about: ["Inspired by the quirky room adventure games like the Stanley Parable, Superliminal and dungeon building of D&D. I'd like to eventually create the IMM acting both as a community engagement project and marketing for your pieces."]
