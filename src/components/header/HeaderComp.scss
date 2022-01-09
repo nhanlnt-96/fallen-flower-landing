@@ -2,16 +2,26 @@
 
 .header-comp {
   &-logo {
+    margin-right: 0;
+    width: 100%;
+
     img {
-      width: 70px;
+      width: 100%;
+      padding: 5px;
     }
 
     @include mobile {
       flex: 1;
       padding-left: 10px;
+      img {
+        width: 30%;
+      }
     }
 
     @include tablet {
+      img {
+        width: 30%;
+      }
       flex: 1;
       padding-left: 10px;
     }
@@ -44,10 +54,21 @@
       text-shadow: 0 0 2px rgba(0, 0, 0, 33%);
       color: #a9852a !important;
       letter-spacing: 5px;
-      font-size: 18px;
       font-family: HeaderFont, sans-serif;
       position: relative;
       z-index: 1;
+      @include mobile {
+        font-size: 18px;
+      }
+      @include tablet {
+        font-size: 18px;
+      }
+      @include desktop {
+        font-size: 15px;
+      }
+      @include wide-desktop {
+        font-size: 18px;
+      }
 
       &::before {
         transform: scaleX(0);
@@ -84,7 +105,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    @include desktop {
+      padding: 5px;
+    }
+    @include wide-desktop {
+      padding: 1rem;
+    }
 
     .button-item {
       background-color: #3a241a;
