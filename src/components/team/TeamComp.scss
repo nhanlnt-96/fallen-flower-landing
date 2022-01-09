@@ -171,14 +171,14 @@
         margin-bottom: 24px;
       }
       @include tablet {
-        height: 350px;
+        height: 450px;
       }
       @include desktop {
         margin-top: 12px;
-        height: 250px;
+        height: 350px;
       }
       @include wide-desktop {
-        height: 400px;
+        height: 500px;
       }
 
       .desc {

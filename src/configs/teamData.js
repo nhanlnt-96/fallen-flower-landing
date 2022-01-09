@@ -20,7 +20,9 @@ export const teamData = [
     title: "machine learning specialist",
     social: "",
     socialIcon: "",
-    about: ["After years of machine learning with neural networking. Playing with reinforcement learning ai with my homemade video games and gans has me excited for this project let alone the study of deep learning with the potentials it brings."]
+    about: ["After years of machine learning with neural networking. Playing with reinforcement learning ai with my" +
+    " homemade video games and gans has me excited for this project let alone the study of deep learning with the" +
+    " potentials it brings.", "Cardinal, our lead developer on the Ai system is hoping that by using two Ai brains for generation to speed up the minting process. To quote “We are getting 2 brains for 2 reasons. 1 It helps congestion, allowing you to play with only 1 when requests are high, and 2 we will establish a site and let the 2 ai bots compete for your amusement to create the \"better\" art."]
   },
   {
     ava: Ava3,

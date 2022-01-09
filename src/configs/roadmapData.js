@@ -17,20 +17,22 @@ export const roadmapData = [
   },
   {
     progress: "04",
-    content: "We will eventually buy 2 asm on chain A.I. brains to train in Gans. They'll be programmed on art throughout human history, including tattoo traditions, fractal/algorithmic art, dynamic painting, photo manipulation, pixel art, and more. "
+    content: "We will buy 2 asm on chain A.I. brains to train in Gans. They'll be programmed on art throughout human history, including tattoo traditions, fractal/algorithmic art, dynamic painting, photo manipulation, pixel art, and more. "
   },
+  // {
+  //   progress: "05",
+  //   content: `Cardinal, our lead developer on the Ai system is hoping that by using two Ai brains for generation to speed up the minting process. To quote “We are getting 2 brains for 2 reasons. 1 It helps congestion, allowing you to play with only 1 when requests are high, and 2 we will establish a site and let the 2 ai bots compete for your amusement to create the "better" art.“`
+  // },
   {
     progress: "05",
-    content: `Cardinal, our lead developer on the Ai system is hoping that by using two Ai brains for generation to speed up the minting process. To quote “We are getting 2 brains for 2 reasons. 1 It helps congestion, allowing you to play with only 1 when requests are high, and 2 we will establish a site and let the 2 ai bots compete for your amusement to create the "better" art.“`
-  },
-  {
-    progress: "06",
     content: "After training the asm brains we will establish a website and dapp for community members to play with" +
       " them, and generate their own art keeping all ip for minting purposes. Using reinforcement learning we will" +
       " allow holders to train the AI as these brains communicate and grow together."
   },
   {
-    progress: "07",
-    content: "Our team overall is planning many other exciting features each with their personal inspirations; which we believe will widen our appeal and the engagement possibilities. "
+    progress: "06",
+    content: "Although we have a roadmap 2.0 for 2023 we would like to underpromise and over deliver and work on" +
+      " roadmap 1.0 this year.",
+    // content: "Our team overall is planning many other exciting features each with their personal inspirations; which we believe will widen our appeal and the engagement possibilities. "
   },
 ]

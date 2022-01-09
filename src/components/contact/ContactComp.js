@@ -30,6 +30,7 @@ const ContactComp = () => {
           <p data-aos="fade-up" className="contact-item space-content">to read more about the asm on chain A.I.
             brains</p>
           <p data-aos="fade-up" className="contact-url">https://www.alteredstatemachine.xyz/?s=09</p>
+          <p data-aos="fade-up" className="contact-url">https://youtu.be/Mh6s94NAeDk</p>
           <p data-aos="fade-up" className="contact-item">@altstatemachine</p>
           <p data-aos="fade-up" className="contact-item space-content">Those are some links for the concept and further
             research.</p>
@@ -45,7 +46,7 @@ const ContactComp = () => {
                 <img src={Twitter} alt="discord-fallen-flower" />
               </a>
             </div>
-            <p className="sub-footer">All donations will also go in our Easter Egg hunt as well more fair and engaging manner than a giveaway. So please use this as an opportunity to send us your art or any undesired tokens to fallenflower.eth. We will leave it hidden for anyone to find. This is to recycle our community's excess and give it out to members in hopes of reaching a wider audience. ALL eth and nft assets sent to this address will be hidden in our museum for anyone in the community to find and keep as a part of our digital Easter Egg hunt. (We advise you to add it on zerion because we keep all proof of donation on the chain!)</p>
+            {/*<p className="sub-footer">All donations will also go in our Easter Egg hunt as well more fair and engaging manner than a giveaway. So please use this as an opportunity to send us your art or any undesired tokens to fallenflower.eth. We will leave it hidden for anyone to find. This is to recycle our community's excess and give it out to members in hopes of reaching a wider audience. ALL eth and nft assets sent to this address will be hidden in our museum for anyone in the community to find and keep as a part of our digital Easter Egg hunt. (We advise you to add it on zerion because we keep all proof of donation on the chain!)</p>*/}
           </div>
           <div className="bg-right" />
         </Row>
