@@ -4,7 +4,7 @@
   background-color: #bd9479;
 
   &-container {
-    height: 100%;
+    min-height: 100%;
   }
 }
 
@@ -26,7 +26,8 @@
       }
     }
 
-    .contact-item, .contact-url {
+    .contact-item,
+    .contact-url {
       font-family: AboutContent, sans-serif;
       font-size: 22px;
       margin: 0 20px;
@@ -50,20 +51,19 @@
 
   .contact-social {
     position: relative;
-    height: 300px;
     margin-top: 36px;
     @include mobile {
       margin-top: 24px;
-      height: 100px;
     }
 
-    .bg-left, .bg-right {
+    .bg-left,
+    .bg-right {
       position: absolute;
       background-image: url("../../assets/gifs/contactFooter1.gif");
       background-size: 100% 100%;
       background-position: center;
       background-repeat: no-repeat;
-      opacity: .1;
+      opacity: 0.1;
       z-index: 0;
       bottom: 0;
       width: 300px;
@@ -95,12 +95,12 @@
         }
       }
 
-      .copyright {
+      .sub-footer {
+        margin-top: 24px;
         color: #ffffff;
         text-shadow: 0 0.0375em 0.28125em rgba(0, 0, 0, 60%);
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
-        margin-top: 24px;
         font-family: Copyright, sans-serif;
         @include smallScreen {
           font-size: 15px !important;

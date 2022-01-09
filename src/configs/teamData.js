@@ -17,15 +17,17 @@ export const teamData = [
   {
     ava: Ava2,
     name: "Cardinal",
-    title: "lead dungeon design",
+    title: "machine learning specialist",
     social: "",
     socialIcon: "",
-    about: ["After years of machine learning with neural networking. Playing with reinforcement learning ai with my homemade video games and gans has me excited for this project let alone the study of deep learning with the potentials it brings."]
+    about: ["After years of machine learning with neural networking. Playing with reinforcement learning ai with my" +
+    " homemade video games and gans has me excited for this project let alone the study of deep learning with the" +
+    " potentials it brings.", "Cardinal, our lead developer on the Ai system is hoping that by using two Ai brains for generation to speed up the minting process. To quote “We are getting 2 brains for 2 reasons. 1 It helps congestion, allowing you to play with only 1 when requests are high, and 2 we will establish a site and let the 2 ai bots compete for your amusement to create the \"better\" art."]
   },
   {
     ava: Ava3,
     name: "BowlingForLimpBiscuts",
-    title: "machine learning specialist",
+    title: "lead dungeon design",
     social: "",
     socialIcon: "",
     about: ["Inspired by the quirky room adventure games like the Stanley Parable, Superliminal and dungeon building of D&D. I'd like to eventually create the IMM acting both as a community engagement project and marketing for your pieces."]
