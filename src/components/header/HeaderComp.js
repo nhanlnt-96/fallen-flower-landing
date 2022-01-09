@@ -8,7 +8,7 @@ const HeaderComp = ({btnConnect}) => {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container className="header-comp-container">
-        <Navbar.Brand href="#home" className="header-comp-logo">
+        <Navbar.Brand href="#home" className="header-comp-logo d-flex justify-content-center align-items-center">
           <img src={Logo} alt="fallen-flower"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="header-comp-toggle-custom"/>
