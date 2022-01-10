@@ -7,6 +7,7 @@ import { connect } from "../../redux/blockchain/blockchainActions";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../redux/data/dataActions";
 import { ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate } from './styles';
+import {notification} from 'antd';
 
 const BannerComp = () => {
   const dispatch = useDispatch();
@@ -116,6 +117,13 @@ const BannerComp = () => {
       <HeaderComp btnConnect={connectWalletBtn} />
       <Container className="banner-comp-container d-flex justify-content-center align-items-center">
         <div className="left-img" />
+        {
+          blockchain.errorMsg && notification.info({
+            message: `Error`,
+            description: blockchain.errorMsg,
+            placement: 'bottomRight',
+          })
+        }
         <Row data-aos="zoom-in" className="banner-comp-content d-flex justify-content-center align-items-center">
           <div className="banner-connected d-flex justify-content-center align-items-center">
             <div className="banner-connected-container">
