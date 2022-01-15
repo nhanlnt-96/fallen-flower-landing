@@ -12,4 +12,8 @@ export const faqData = [
     question: `What is "imm"?`,
     answer: "Several times we mention IMM or BAE, these are terms for a new concept blockchain art experience."
   },
+  {
+    question: "How many can you mint?",
+    answer: "To limit abuse we have restricted each wallet to 30 mints max."
+  },
 ]
