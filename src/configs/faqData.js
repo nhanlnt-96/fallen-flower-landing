@@ -14,6 +14,6 @@ export const faqData = [
   },
   {
     question: "How many can you mint?",
-    answer: "To limit abuse we have restricted each wallet to 30 mints max."
+    answer: "To limit abuse we have restricted each wallet to 30 mints max with 20 per tx."
   },
 ]
